@@ -1,8 +1,9 @@
 {
     "manifest_version": 3,
-    "name": "Slides to Video Converter",
+    "name": "Google Slides Enhancer",
     "version": "1.0",
-    "permissions": ["activeTab", "identity", "storage", "https://www.googleapis.com/"],
+    "description": "Expand and conver existing Google Slides presentations.",
+    "permissions": ["activeTab", "storage", "scripting"],
     "action": {
       "default_popup": "src/views/popup.html",
       "default_icon": {
