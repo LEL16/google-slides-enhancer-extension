@@ -1,30 +1,29 @@
 {
-    "manifest_version": 3,
-    "name": "Google Slides Enhancer",
-    "version": "1.0",
-    "description": "Expand and conver existing Google Slides presentations.",
-    "permissions": ["activeTab", "storage", "scripting"],
-    "action": {
+  "manifest_version": 3,
+  "name": "Google Slides Enhancer",
+  "version": "1.0",
+  "description": "Expand and convert existing Google Slides presentations.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "action": {
       "default_popup": "src/views/popup.html",
       "default_icon": {
-        "16": "src/images/16x16.png",
-        "48": "src/images/48x48.png",
-        "128": "src/images/128x128.png"
+          "16": "src/images/16x16.png",
+          "48": "src/images/48x48.png",
+          "128": "src/images/128x128.png"
       }
-    },
-    "background": {
+  },
+  "background": {
       "service_worker": "src/js/background.js"
-    },
-    "content_scripts": [
+  },
+  "content_scripts": [
       {
-        "matches": ["https://docs.google.com/presentation/*"],
-        "js": ["src/js/in-content.js"]
+          "matches": ["https://docs.google.com/presentation/*"],
+          "js": ["src/js/in-content.js"]
       }
-    ],
-    "icons": {
+  ],
+  "icons": {
       "16": "src/images/16x16.png",
       "48": "src/images/48x48.png",
       "128": "src/images/128x128.png"
-    }
   }
-  
+}

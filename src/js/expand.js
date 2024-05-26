@@ -1,6 +1,8 @@
 async function expandSlides() {
     const presentationId = window.location.pathname.split('/')[3];
+    console.log(presentationId);
     const googleAPIKey = "AIzaSyA9zw8cCdIl-viHesXuA8oeUU-opAjVcc0";
+    console.log(googleAPIKey);
     const googleSlidesApiURL = "https://slides.googleapis.com/v1/presentations/${presentationId}?key=${apiKey}";
 
     const response = await fetch(googleSlidesApiURL, {
